@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:400,500,700");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:400,500,700");
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color:#DFE1E2;
+    background-size: cover;
+    background-attachment:fixed;
+}
+
+.full{
+    display: flex;
+    flex-direction: column;
+}
+
+.titlu {
+    position: relative;
+    width: 710px;
+    left: 350px;
+    top:20px;
+}
+
+.informatii ul {
+    position: absolute;
+    width: 710px;
+    left: 350px;
+    top:160px;
+    padding: 10px;
+    box-sizing: border-box;
+    background: #7D7B7B;
+    box-shadow: inset 0 0 15px #DFE1E2;
+}
+
+.informatii ul li{
+    display: flex;
+    background: rgb(236, 237, 238);
+    padding: 10px 20px;
+    margin: 5px 0;
+    transition: .5s;
+}
+
+.informatii ul li span:nth-child(1)
+{
+    width: 200px;
+    text-align: left;
+}
+
+.informatii ul li span:nth-child(2)
+{
+    width: 400px;
+    text-align: right;
+}

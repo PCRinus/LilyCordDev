@@ -1,0 +1,32 @@
+
+body {
+    padding:0;
+    margin: 0;
+    
+    /* font-family: poppins, sans-serif;
+    font-size: 1.2rem;
+    color: rgba(100, 95, 95, 0.83); */
+    background: url('images/old1.JPG') no-repeat; 
+    background-size: cover;
+    background-attachment:fixed;
+}
+
+.full {
+    display: flex;
+    flex-direction: column;
+}
+.main_sec {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.home-main-section .product {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin:1rem;
+    align-self: center;
+}

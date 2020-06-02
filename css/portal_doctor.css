@@ -1,0 +1,119 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:400,500,700");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:400,500,700");
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color:#DFE1E2;
+    background-size: cover;
+    background-attachment:fixed;
+}
+
+.full{
+    display: flex;
+    flex-direction: column;
+}
+
+.titlu {
+    position: relative;
+    width: 710px;
+    left: 350px;
+    top:20px;
+}
+.lista ul {
+    position: absolute;
+    width: 710px;
+    left: 350px;
+    top:160px;
+    padding: 10px;
+    box-sizing: border-box;
+    background: #7D7B7B;
+    box-shadow: inset 0 0 15px #DFE1E2;
+}
+
+.lista ul li{
+    display: flex;
+    background: rgb(236, 237, 238);
+    padding: 10px 20px;
+    margin: 5px 0;
+    transition: .5s;
+}
+
+.lista ul li span:nth-child(1)
+{
+    width: 90px;
+    text-align: center;
+}
+
+.lista ul li span:nth-child(2)
+{
+    width: 200px;
+    text-align: center;
+}
+
+.lista ul li span:nth-child(3)
+{
+    width: 400px;
+    text-align: center;
+}
+
+.lista ul li:hover{
+    transform: scale(1.06);
+    background: #DFE1E2;
+}
+
+/* .logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.25em;
+    color: inherit;
+    text-decoration: none;
+}
+
+.logo_nume {
+    font-family: Nanum Myeongjo;
+    margin-left: 1rem;
+    color: #645F5F;;
+} */
+
+/* 
+.navig ul{
+    display: flex;
+    margin: 0;
+    padding:0;
+    list-style: none;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    opacity: 100%;
+}
+
+ .navig a{
+    color: rgb(53, 51, 51);;
+    text-decoration: none;
+    padding: 1rem;
+} 
+
+
+.header {
+    font-family: poppins, sans-serif;
+    font-size: 1.2rem;
+    color: rgba(100, 95, 95, 0.83);
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    height: 70px;
+    padding-left: 20px;
+    background-color:645F5F;
+   opacity: 100%;
+}
+
+.header .navig {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    height: 70px;
+    padding-left: 20px;
+    opacity: 100%;
+} */

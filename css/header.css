@@ -1,0 +1,57 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:400,500,700");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:400,500,700");
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.25em;
+    color: inherit;
+    text-decoration: none;
+}
+
+.logo_nume {
+    font-family: Nanum Myeongjo;
+    margin-left: 1rem;
+    color: #645F5F;
+}
+
+
+.navig ul{
+    display: flex;
+    margin: 0;
+    padding:0;
+    list-style: none;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    opacity: 100%;
+}
+
+ .navig a{
+    color: rgb(53, 51, 51);;
+    text-decoration: none;
+    padding: 1rem;
+} 
+
+
+.header {
+    font-family: poppins, sans-serif;
+    font-size: 1.2rem;
+    color: rgba(100, 95, 95, 0.83);
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    height: 70px;
+    padding-left: 20px;
+    background-color: rgb(241, 241, 241);
+   opacity: 70%;
+}
+
+.header .navig {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    height: 70px;
+    padding-left: 20px;
+    opacity: 100%;
+}
