@@ -2,17 +2,34 @@
     ViewBag.Title = "Home Page";
 }
 
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                @Html.ActionLink("Login pentru pacienti", "FormLogin", "Login")
-            </div>
-            <div class="col">
-                @Html.ActionLink("Login pentru medici", "FormLogin", "Login")
-            </div>
-            <div class="col">
-                @Html.ActionLink("Inregistrare pentru toti userii", "FormRegister", "Login")
-            </div>
+<div class="jumbotron index-jumbo bg-transparent border border-dark">
+    <h1 class="display-4">LilyCord - SmartHealth Platform</h1>
+    <hr class="my-4">
+    <p class="lead">
+        @Html.ActionLink("Login pentru pacienti", "FormLogin", "Login", routeValues: null, htmlAttributes: new { @class = "btn btn-primary btn-lg btn-logare", @role = "button" })
+        @Html.ActionLink("Login pentru medici", "FormLoginMedici", "Login", routeValues: null, htmlAttributes: new { @class = "btn btn-primary btn-lg btn-logare", @role = "button" })
+        @Html.ActionLink("Inregistrare pentru toti userii", "FormRegister", "Login", routeValues: null, htmlAttributes: new { @class = "btn btn-primary btn-lg btn-logare float-right", @role = "button" })
+    </p>
+</div>
+
+<div class="container">
+
+    <h4>Testare</h4>
+    <div class="row">
+        <div class="col">
+            @Html.ActionLink("Fomulare adaugare pacient", "Signup_Pacient", "Pacient", routeValues: null, htmlAttributes: new { @class = "btn btn-primary btn-logare", @role = "button" })
+        </div>
+        <div class="col">
+            @Html.ActionLink("Formulare adaugare medici", "Signup_Medici", "Medic", routeValues: null, htmlAttributes: new { @class = "btn btn-primary btn-logare", @role = "button" })
+        </div>
+        <div class="col">
+            @Html.ActionLink("Vezi toti pacientii din Azure ", "ViewPacient", "Pacient", routeValues: null, htmlAttributes: new { @class = "btn btn-primary btn-logare", @role = "button" })
+        </div>
+        <div class="col">
+            @Html.ActionLink("Vezi toti medicii din Azure ", "ViewMedici", "Medic", routeValues: null, htmlAttributes: new { @class = "btn btn-primary btn-logare", @role = "button" })
+        </div>
+        <div class="col">
+            @Html.ActionLink("Vezi toate diagnsoticele din Azure ", "ViewDiagnostic", "Pacient", routeValues: null, htmlAttributes: new { @class = "btn btn-primary btn-logare", @role = "button" })
         </div>
     </div>
-
+</div>

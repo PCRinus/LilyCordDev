@@ -3,57 +3,33 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title - BioMedicis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Rokkitt:wght@600&display=swap" rel="stylesheet">
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    @*<div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                    <li>@Html.ActionLink("Signup Medici", "Signup_Medici", "Home")</li>
-                    <li>@Html.ActionLink("Login", "Login", "Login")</li>
-                    <li>@Html.ActionLink("Register", "Register", "Login")</li>
-                </ul>
-            </div>
-        </div>
-    </div>*@
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">@Html.ActionLink("LilyCord", "Index", "Home")</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <img src="~/Content/101864809_1659029400911812_2860726481477173248_n.png" />
+        @Html.ActionLink("LilyCord", "Index", "Home", routeValues: null, htmlAttributes: new { @class = "navbar-brand navbar-image-title", @role = "navbar-brand" })
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">@Html.ActionLink("Home", "Index", "Home") <span class="sr-only">(current)</span></a>
+                    @Html.ActionLink("Home", "Index", "Home", routeValues: null, htmlAttributes: new { @class = "nav-link", @role = "nav-link" })
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">@Html.ActionLink("Contact", "Contact", "Home")</a>
+                    @Html.ActionLink("Contact", "Contact", "Home", routeValues: null, htmlAttributes: new { @class = "nav-link", @role = "nav-link" })
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">@Html.ActionLink("About", "About", "Home")</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">@Html.ActionLink("Signup Medici", "Signup_Medici", "Home")</a>
+                    @Html.ActionLink("About", "About", "Home", routeValues: null, htmlAttributes: new { @class = "nav-link", @role = "nav-link" })
                 </li>
             </ul>
         </div>
     </nav>
-    <div class="container body-content">
+    <div class="container content">
         @RenderBody()
         <hr />
         <footer class="footer">

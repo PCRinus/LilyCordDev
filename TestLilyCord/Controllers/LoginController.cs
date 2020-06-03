@@ -24,7 +24,24 @@ namespace TestLilyCord.Controllers
             if (ModelState.IsValid)
             {
                 //int recordsCreated = LoginProcessor.CreateLogin(model.Email, model.Parola);
-                return RedirectToAction("ViewPacient", "Pacient", new { area = "" });
+                return RedirectToAction("ViewSpecificPacient", "Pacient", new { area = "" });
+            }
+            return View();
+        }
+
+        public ActionResult FormLoginMedici()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult FormLoginMedici(LoginModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                //int recordsCreated = LoginProcessor.CreateLogin(model.Email, model.Parola);
+                return RedirectToAction("ViewMedici", "Medic", new { area = "" });
             }
             return View();
         }
@@ -58,7 +75,11 @@ namespace TestLilyCord.Controllers
             if (ModelState.IsValid)
             {
                 int recordsCreated = LoginProcessor.CreateLogin(model.Email, model.Parola);
-                return RedirectToAction("Index", "Home", new { area = "" });
+                return RedirectToAction("Success", "Home", new { area = "" });
+            }
+            else
+            {
+                return RedirectToAction("Failure", "Home", new { area = "" });
             }
             return View();
         }

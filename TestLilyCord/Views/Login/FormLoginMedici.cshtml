@@ -1,16 +1,15 @@
 ﻿@model TestLilyCord.Models.LoginModel
 
 @{
-    ViewBag.Title = "FormLogin";
+    ViewBag.Title = "FormLoginMedici";
 }
-
 
 @using (Html.BeginForm()) 
 {
     @Html.AntiForgeryToken()
     
-    <div class="form-horizontal formular-logare">
-        <h4>Login - Pacienti</h4>
+    <div class="form-horizontal">
+        <h4>Login - Medici</h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">
@@ -35,8 +34,4 @@
             </div>
         </div>
     </div>
-}
-
-@section Scripts {
-    @Scripts.Render("~/bundles/jqueryval")
 }
